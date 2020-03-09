@@ -15,7 +15,7 @@
     <div class="container">
         <h2>Survey Questions</h2>
         <hr>
-        <p> <strong>Instructions:</strong>Answer these 10 questions and find your true match, real or more likely fictional.</p>
+        <p> <strong>Instructions:</strong> Answer these 10 questions and find your true match, real or more likely fictional.</p>
 
         <h4><strong>About You</strong></h4>
 
@@ -152,7 +152,7 @@
 
             <div class="form-group">
                 <h4><strong>Question 10</strong></h4>
-                <label for="q10">If we go to the movies, I'm definintely ordering popcorn.</label>
+                <label for="q10">If we go to the movies, I'm definitely ordering popcorn.</label>
                 <select class="form-control" id="q10">
                     <option value="empty">Select an option</option>
                     <option value="1">1 (strongly disagree)</option>
@@ -232,6 +232,10 @@
             } else {
                 alert("Survey is incomplete!");
             }
+        });
+
+        $('#match-modal').on('hidden.bs.modal',function(){
+            location.reload();
         });
 
     </script>
