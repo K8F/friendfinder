@@ -34,12 +34,18 @@ module.exports=function(app){
           matchIndex = i;
           minimumDifference = totalDifference;
         }
+
       }
+
+
   
 
     data.push(user);
 
     res.json(data[matchIndex])
+
+    
+
     
     });
 
